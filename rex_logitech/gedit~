@@ -1,0 +1,4 @@
+run ./evtest /dev/input/eventX
+("where X is any number")
+
+

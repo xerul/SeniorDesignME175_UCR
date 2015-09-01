@@ -1,0 +1,5 @@
+run ./evtest /dev/input/eventX
+("where X is any number")
+
+the event# can be found using  
+"cat /proc/bus/input/devices"

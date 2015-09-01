@@ -1,0 +1,17 @@
+
+	mRet = mSerial.WriteString(intStr);      
+	if (mRet!=1) { printf ("Error while writing string data\n");} 
+
+	mRet = mSerial.WriteString(",");
+	if (mRet!=1) { printf ("Error while writing ,\n");} 
+	
+	snprintf(intStr, sizeof(intStr), "%d", b);
+	intString = std::string(intStr);
+
+	mRet = mSerial.WriteString(intStr);                              // Send the command on the serial port
+	if (mRet!=1) { printf ("Error while writing string data\n");} 
+
+	mRet = mSerial.WriteString("e");
+	if (mRet!=1) { printf ("Error while writing e\n");} 
+}
+	
